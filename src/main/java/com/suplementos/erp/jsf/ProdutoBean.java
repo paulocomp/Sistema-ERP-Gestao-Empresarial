@@ -14,7 +14,11 @@ import java.util.List;
 @RequestScoped
 public class ProdutoBean implements Serializable {
 
-    private Produto produto = new Produto(0, "", "", 0.0, 0, 0, new Categoria(0, ""), new Fornecedor(0, "", ""));
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private Produto produto = new Produto(0, "", "", 0.0, 0, 0, new Categoria(0, ""), new Fornecedor(0, "", ""));
     private ProdutoRepository produtoRepository = new ProdutoRepository();
 
     public void salvar() {
